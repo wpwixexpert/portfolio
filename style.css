@@ -1,0 +1,49 @@
+body {
+	font-family: arial, helvetica, sans-serif;
+}
+h1 {
+	font-size: 16pt;
+	color: #999;
+}
+
+h2 {
+	padding-top: 5pt;
+	border-top: 1px #44A solid;
+	font-size: 12pt;
+	color: #444;
+}
+
+h2 span {
+	color: #44A;
+}
+
+p {
+	font-size: 10pt;
+	color: #033;
+	padding-bottom: 10pt;
+}
+
+p b {
+	font-weight: bold;
+	color: #A33;
+}
+
+.example {
+	display: block;
+	border: 1px #d0d0d0 solid;
+	padding: 0 0 5px 5px;
+	background-color: #dddddd; 
+}
+
+.navi {
+	display: block;
+	border: 1px #d0d0d0 solid;
+	padding: 5px 5px;
+	font-size: 11pt;
+	background-color: #ccccff; 
+	text-align: center;	
+}
+
+.navi a {
+	color: #922;
+}

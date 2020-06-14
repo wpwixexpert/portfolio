@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>HTML quick reference</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<div class="navi"><b>HTML Reference</b> | <a href="css.html">CSS Reference</a> | <a href="js.html">JavaScript Reference</a> | <a href="help.html">Program Help</a>
+</div>
+
+<h1>HTML quick reference</h1>
+<div>
+<h2 id="a">A - <span>Anchor</span></h2>
+<p>&lt;<b>A</b> <b>HREF</b>=URI <b>REL</b>=LinkTypes <b>TYPE</b>=ContentType <b>TARGET</b>=[ _blank | _self | _parent | _top ] <b>TABINDEX</b>=Number <b>ONFOCUS</b>=Script <b>ONBLUR</b>=Script&gt; ... &lt;<b>/A</b>&gt;</p>
+
+<h2 id="b">B - <span>Bold Text</span></h2>
+<p>&lt;<b>B</b>&gt; ... &lt;<b>/B</b>&gt;</p>
+
+<h2 id="body">BODY - <span>Document Body</span></h2>
+<p>&lt;<b>BODY</b> <b>BACKGROUND</b>=URI <b>BGCOLOR</b>=#RRGGBB <b>TEXT</b>=#RRGGBB <b>ONLOAD</b>=Script <b>ONUNLOAD</b>=Script&gt; ... &lt;<b>/BODY</b>&gt;</p>
+
+<h2 id="br">BR - <span>Line Break</span></h2>
+<p>&lt;<b>BR</b> <b>CLEAR</b>=[ left | all | right | none ]&gt;</p>
+
+<h2 id="button">BUTTON - <span>Submit, Reset, or Push Button</span></h2>
+<p>&lt;<b>BUTTON</b> <b>NAME</b>=CDATA <b>VALUE</b>=CDATA <b>TYPE</b>=[ submit | reset | button ] <b>DISABLED</b> <b>ACCESSKEY</b>=Character <b>ONFOCUS</b>=Script <b>ONBLUR</b>=Script&gt; ... &lt;<b>/BUTTON</b>&gt;</p>
+
+<h2 id="div">DIV - <span>Generic Block-level Container</span></h2>
+<p>&lt;<b>DIV</b> <b>ALIGN</b>=[ left | center | right | justify ]&gt; ... &lt;<b>/DIV</b>&gt;</p>
+
+<h2 id="font">FONT - <span>Font Change</span></h2>
+<p>&lt;<b>FONT</b> <b>SIZE</b>=CDATA <b>COLOR</b>=#RRGGBB <b>FACE</b>=CDATA&gt; ... &lt;<b>/FONT</b>&gt;</p>
+
+<h2 id="form">FORM - <span>Interactive Form</span></h2>
+<p>&lt;<b>FORM</b> <b>ACTION</b>=URI <b>METHOD</b>=[ get | post ] <b>ENCTYPE</b>=ContentType <b>NAME</b>=CDATA <b>ACCEPT-CHARSET</b>=Charsets <b>ACCEPT</b>=ContentTypes <b>ONSUBMIT</b>=Script <b>ONRESET</b>=Script&gt; ... &lt;<b>/FORM</b>&gt;</p>
+<pre class="example"><code>
+&lt;FORM METHOD=post ACTION="/test.php"&gt;
+  &lt;FIELDSET&gt;
+    &lt;INPUT TYPE=text id=name ID=name&gt;&lt;/INPUT&gt;
+    &lt;INPUT TYPE=text id=email ID=email&gt;&lt;/INPUT&gt;
+    &lt;TEXTAREA id=adr ID=addr ROWS=4 COLS=40&gt;&lt;/TEXTAREA&gt;  
+  &lt;/FIELDSET&gt;
+  &lt;INPUT TYPE=submit VALUE="Submit"&gt;&lt;/INPUT&gt;
+&lt;/FORM&gt;</code></pre>
+
+<h2 id="hr">HR - <span>Horizontal Rule</span></h2>
+<p>&lt;<b>HR</b> <b>ALIGN</b>=[ left | center | right ] <b>NOSHADE</b> <b>SIZE</b>=Pixels <b>WIDTH</b>=Length&gt;</p>
+
+<h2 id="img">IMG - <span>Inline Image</span></h2>
+<p>&lt;<b>IMG</b> <b>SRC</b>=URI <b>ALT</b>=Text <b>LONGDESC</b>=URI <b>WIDTH</b>=Length <b>HEIGHT</b>=Length <b>USEMAP</b>=URI <b>ISMAP</b> <b>ALIGN</b>=[ top | middle | bottom | left | right ] <b>BORDER</b>=Pixels <b>HSPACE</b>=Pixels <b>VSPACE</b>=Pixels <b>NAME</b>=CDATA&gt;</p>
+
+<h2 id="input">INPUT - <span>Form Input</span></h2>
+<p>&lt;<b>INPUT</b> <b>TYPE</b>=[ text | password | checkbox | radio | submit | reset | file | hidden | image | button ] <b>NAME</b>=CDATA <b>VALUE</b>=CDATA <b>CHECKED</b> <b>SIZE</b>=CDATA <b>MAXLENGTH</b>=Number <b>SRC</b>=URIforImage <b>ALT</b>=CDATA <b>DISABLED</b> <b>READONLY</b> <b>ACCEPT</b>=ContentTypes <b>ACCESSKEY</b>=Character <b>TABINDEX</b>=Number <b>ONFOCUS</b>=Script <b>ONBLUR</b>=Script <b>ONSELECT</b>=Script <b>ONCHANGE</b>=Script&gt;</p>
+<p><a href="#form">Example</a></p>
+
+<h2 id="li">LI - <span>List Item</span> for <a href="#ul">&lt;UL&gt;</a> (unordered list) or <a href="#ol">&lt;OL&gt;</a> (ordered list)</h2>
+<p>&lt;<b>LI</b> <b>TYPE</b>=[ disc | square | circle | 1 | a | A | i | I ] <b>VALUE</b>=Number&gt; ... &lt;<b>/LI</b>&gt;</p>
+
+<h2 id="link">LINK - <span>Document Relationship</span></h2>
+<p>&lt;<b>LINK</b> <b>REL</b>=[ Prev | Next | Start |... ] <b>REV</b>=[ Prev | Next | Start |... ] <b>HREF</b>=URI <b>TYPE</b>=[ "text/css" | "application/pdf" | ... ] <b>TARGET</b>=[ _blank | _self | _parent | _top ] <b>MEDIA</b>= [ screen | print | all | ... ] <b>HREFLANG</b>=LanguageCode <b>CHARSET</b>=Charset&gt;</p>
+
+<h2 id="meta">META - <span>Metadata</span></h2>
+<p>&lt;<b>META</b> <b>NAME</b>=[ description | keywords | robots | author | ... ] <b>HTTP-EQUIV</b>=[ Expires | Refresh | 	... ] <b>CONTENT</b>=[ noindex | follow | nofollow |... ] <b>SCHEME</b>=CDATA&gt;</p>
+
+<h2 id="ol">OL - <span>Ordered List (container for <a href="#li">&lt;LI&gt;</a>)</span></h2>
+<p>&lt;<b>OL</b> <b>TYPE</b>=TYPE=[ 1 | a | A | i | I ] <b>START</b>=Number <b>COMPACT</b>&gt; ... &lt;<b>/OL</b>&gt;</p>
+
+<h2 id="option">OPTION - <span>Menu Option (for <a href="#select">&lt;SELECT&gt;</a>)</span></h2>
+<p>&lt;<b>OPTION</b> <b>VALUE</b>=CDATA <b>SELECTED</b> <b>DISABLED</b> <b>LABEL</b>=Text&gt; ... &lt;<b>/OPTION</b>&gt;</p>
+<p><a href="#select">Example</a></p>
+
+<h2 id="p">P - <span>Paragraph</span></h2>
+<p>&lt;<b>P</b> <b>ALIGN</b>=[ left | center | right | justify ]&gt; ... &lt;<b>/P</b>&gt;</p>
+
+<h2 id="script">SCRIPT - <span>Embedded Script</span></h2>
+<p>&lt;<b>SCRIPT</b> <b>TYPE</b>=[ "text/javascript" | ... ] <b>SRC</b>=URI <b>CHARSET</b>=Charset <b>DEFER</b>&gt; ... &lt;<b>/SCRIPT</b>&gt;</p>
+
+<h2 id="select">SELECT - <span>Option Selector (container for <a href="#option">&lt;OPTION&gt;</a>)</span></h2>
+<p>&lt;<b>SELECT</b> <b>NAME</b>=CDATA <b>MULTIPLE</b> <b>SIZE</b>=Number <b>DISABLED</b> <b>TABINDEX</b>=Number <b>ONFOCUS</b>=Script <b>ONBLUR</b>=Script <b>ONCHANGE</b>=Script&gt; ... &lt;<b>/SELECT</b>&gt;</p>
+<pre class="example"><code>
+&lt;SELECT id=browser&gt;
+  &lt;OPTION LABEL="Firefox"&gt;Firefox&lt;/OPTION&gt;
+  &lt;OPTION LABEL="MSIE"&gt;MSIE&lt;/OPTION&gt;
+  &lt;OPTION LABEL="Opera"&gt;Opera&lt;/OPTION&gt;
+&lt;/SELECT&gt;</code></pre>
+
+<h2 id="style">STYLE - <span>Embedded Style Sheet</span></h2>
+<p>&lt;<b>STYLE</b> <b>TYPE</b>=[ "text/css" | ... ] <b>MEDIA</b>= [ screen | print | all | ... ] <b>TITLE</b>=Text&gt; ... &lt;<b>/STYLE</b>&gt;</p>
+
+<h2 id="table">TABLE - <span>Table</span></h2>
+<p>&lt;<b>TABLE</b> <b>SUMMARY</b>=Text <b>WIDTH</b>=Length <b>BORDER</b>=Pixels <b>FRAME</b>=[ void | above | below | hsides | lhs | rhs | vsides | box | border ] <b>RULES</b>=[ none | groups | rows | cols | all ] <b>CELLSPACING</b>=Length <b>CELLPADDING</b>=Length&gt; ... &lt;<b>/TABLE</b>&gt;</p>
+<pre class="example"><code>
+&lt;TABLE BORDER=1 CELLPADDING=5&gt;
+  &lt;TR ALIGN=left&gt;
+    &lt;TD VALIGN=middle&gt;One&lt;TD&gt;
+    &lt;TD VALIGN=middle&gt;Two&lt;TD&gt;
+    &lt;TD VALIGN=middle&gt;Three&lt;TD&gt;
+  &lt;/TR&gt;
+&lt;/TABLE&gt;</code></pre>
+
+<h2 id="td">TD - <span>Table Data Cell</span></h2>
+<p>&lt;<b>TD</b> <b>ROWSPAN</b>=Number <b>COLSPAN</b>=Number <b>SCOPE</b>=[ row | col | rowgroup | colgroup ] <b>AXIS</b>=CDATA <b>ALIGN</b>=[ left | center | right | justify | char ] <b>CHAR</b>=AlignmentCharacter <b>CHAROFF</b>=Length <b>VALIGN</b>=[ top | middle | bottom | baseline ]&gt; ... &lt;<b>/TD</b>&gt;</p>
+<p><a href="#table">Example</a></p>
+
+<h2 id="tr">TR - <span>Table Row</span></h2>
+<p>&lt;<b>TR</b><b>ALIGN</b>=[ left | center | right | justify | char ] <b>CHAR</b>=AlignmentCharacter <b>CHAROFF</b>=Length <b>VALIGN</b>=[ top | middle | bottom | baseline ]&gt; ... &lt;<b>/TR</b>&gt;</p>
+<p><a href="#table">Example</a></p>
+
+<h2 id="textarea">TEXTAREA - <span>Multi-line Text Area for <a href="#form">&lt;FORM&gt;</a></span></h2>
+<p>&lt;<b>TEXTAREA</b> <b>NAME</b>=CDATA <b>ROWS</b>=Number <b>COLS</b>=Number <b>DISABLED</b> <b>READONLY</b> <b>ACCESSKEY</b>=Character <b>TABINDEX</b>=Number <b>ONFOCUS</b>=Script <b>ONBLUR</b>=Script <b>ONSELECT</b>=Script <b>ONCHANGE</b>=Script&gt; ... &lt;<b>/TEXTAREA</b>&gt;</p>
+<p><a href="#form">Example</a></p>
+
+
+<h2 id="ul">UL - <span>Unordered List (container for <a href="#li">&lt;LI&gt;</a>)</span></h2>
+<p>&lt;<b>UL</b> <b>TYPE</b>=TYPE=[ disc | square | circle ] <b>COMPACT</b>&gt; ... &lt;<b>/UL</b>&gt;</p>
+
+<div class="navi"><b>HTML Reference</b> | <a href="css.html">CSS Reference</a> | <a href="js.html">JavaScript Reference</a>
+</div>
+
+</div>
+</body>
+</html>
